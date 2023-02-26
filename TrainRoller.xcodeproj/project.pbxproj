@@ -16,6 +16,8 @@
 		2B3A189929A77FDC00A0F998 /* TrainRollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3A189829A77FDC00A0F998 /* TrainRollerTests.swift */; };
 		2B3A18A329A77FDC00A0F998 /* TrainRollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3A18A229A77FDC00A0F998 /* TrainRollerUITests.swift */; };
 		2B3A18A529A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3A18A429A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift */; };
+		2B41383829AB97F200E912E5 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41383729AB97F200E912E5 /* WorkoutManager.swift */; };
+		2B41383B29AB984100E912E5 /* WorkoutManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41383A29AB984100E912E5 /* WorkoutManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		2B3A189E29A77FDC00A0F998 /* TrainRollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainRollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3A18A229A77FDC00A0F998 /* TrainRollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRollerUITests.swift; sourceTree = "<group>"; };
 		2B3A18A429A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRollerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B41383729AB97F200E912E5 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		2B41383A29AB984100E912E5 /* WorkoutManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		2B3A188029A77FD900A0F998 /* TrainRoller */ = {
 			isa = PBXGroup;
 			children = (
+				2B41383629AB97D500E912E5 /* Core */,
 				2B3A188129A77FD900A0F998 /* AppDelegate.swift */,
 				2B3A188329A77FD900A0F998 /* SceneDelegate.swift */,
 				2B3A188529A77FD900A0F998 /* ViewController.swift */,
@@ -113,6 +118,7 @@
 		2B3A189729A77FDC00A0F998 /* TrainRollerTests */ = {
 			isa = PBXGroup;
 			children = (
+				2B41383929AB980300E912E5 /* Core */,
 				2B3A189829A77FDC00A0F998 /* TrainRollerTests.swift */,
 			);
 			path = TrainRollerTests;
@@ -125,6 +131,22 @@
 				2B3A18A429A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift */,
 			);
 			path = TrainRollerUITests;
+			sourceTree = "<group>";
+		};
+		2B41383629AB97D500E912E5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B41383729AB97F200E912E5 /* WorkoutManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2B41383929AB980300E912E5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2B41383A29AB984100E912E5 /* WorkoutManagerTests.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3A188629A77FD900A0F998 /* ViewController.swift in Sources */,
+				2B41383829AB97F200E912E5 /* WorkoutManager.swift in Sources */,
 				2B3A188229A77FD900A0F998 /* AppDelegate.swift in Sources */,
 				2B3A188429A77FD900A0F998 /* SceneDelegate.swift in Sources */,
 			);
@@ -269,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3A189929A77FDC00A0F998 /* TrainRollerTests.swift in Sources */,
+				2B41383B29AB984100E912E5 /* WorkoutManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
