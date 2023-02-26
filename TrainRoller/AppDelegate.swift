@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TrainRoller
-//
-//  Created by Sergio Daniel on 2/23/23.
-//
-
 import UIKit
 
 @main
