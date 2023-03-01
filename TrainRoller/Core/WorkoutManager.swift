@@ -13,6 +13,7 @@ enum MuscleType {
     case core
     case trapezoid
     case triceps
+    case cuadriceps
 }
 
 
