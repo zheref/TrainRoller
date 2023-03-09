@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var exercisesTableView: UITableView!
@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
         addButton.tintColor = .black
         exercisesTableView.dataSource = self
+        exercisesTableView.delegate = self
         setup()
     }
     
@@ -44,5 +45,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         let exercise = manager.workouts[indexPath.row]
         cell.textLabel?.text = exercise.name
         return cell
+    }
+    // Suscripción al evento de selección de celdas.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsController = UIStoryboard(name: "Main", bundle: Bundle.main)
+            .instantiateViewController(withIdentifier: "ExersiceDetails") as? DetailsViewController
+        let exersiceSelected = manager.workouts[indexPath.row]
+        detailsController?.model = exersiceSelected
+        
+        navigationController?.pushViewController(detailsController!, animated: true)
     }
 }

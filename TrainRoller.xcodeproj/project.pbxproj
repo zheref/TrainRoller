@@ -18,6 +18,7 @@
 		2B3A18A529A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3A18A429A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift */; };
 		2B41383829AB97F200E912E5 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41383729AB97F200E912E5 /* WorkoutManager.swift */; };
 		2B41383B29AB984100E912E5 /* WorkoutManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41383A29AB984100E912E5 /* WorkoutManagerTests.swift */; };
+		C0DC230E29BA0A04004B58CA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC230D29BA0A04004B58CA /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2B3A18A429A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRollerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2B41383729AB97F200E912E5 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		2B41383A29AB984100E912E5 /* WorkoutManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManagerTests.swift; sourceTree = "<group>"; };
+		C0DC230D29BA0A04004B58CA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				2B3A188729A77FD900A0F998 /* Main.storyboard */,
 				2B3A188329A77FD900A0F998 /* SceneDelegate.swift */,
 				2B3A188529A77FD900A0F998 /* ViewController.swift */,
+				C0DC230D29BA0A04004B58CA /* DetailsViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				2B41383829AB97F200E912E5 /* WorkoutManager.swift in Sources */,
 				2B3A188229A77FD900A0F998 /* AppDelegate.swift in Sources */,
 				2B3A188429A77FD900A0F998 /* SceneDelegate.swift in Sources */,
+				C0DC230E29BA0A04004B58CA /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
