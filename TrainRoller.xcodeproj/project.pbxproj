@@ -104,12 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				2B41383629AB97D500E912E5 /* Core */,
+				C0DC230C29B9FC7B004B58CA /* Resources */,
+				C0DC230B29B9FC32004B58CA /* UI */,
 				2B3A188129A77FD900A0F998 /* AppDelegate.swift */,
-				2B3A188329A77FD900A0F998 /* SceneDelegate.swift */,
-				2B3A188529A77FD900A0F998 /* ViewController.swift */,
-				2B3A188729A77FD900A0F998 /* Main.storyboard */,
-				2B3A188A29A77FDB00A0F998 /* Assets.xcassets */,
-				2B3A188C29A77FDB00A0F998 /* LaunchScreen.storyboard */,
 				2B3A188F29A77FDB00A0F998 /* Info.plist */,
 			);
 			path = TrainRoller;
@@ -147,6 +144,25 @@
 				2B41383A29AB984100E912E5 /* WorkoutManagerTests.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		C0DC230B29B9FC32004B58CA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2B3A188729A77FD900A0F998 /* Main.storyboard */,
+				2B3A188329A77FD900A0F998 /* SceneDelegate.swift */,
+				2B3A188529A77FD900A0F998 /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C0DC230C29B9FC7B004B58CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B3A188C29A77FDB00A0F998 /* LaunchScreen.storyboard */,
+				2B3A188A29A77FDB00A0F998 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
