@@ -18,6 +18,7 @@
 		2B3A18A529A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3A18A429A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift */; };
 		2B41383829AB97F200E912E5 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41383729AB97F200E912E5 /* WorkoutManager.swift */; };
 		2B41383B29AB984100E912E5 /* WorkoutManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41383A29AB984100E912E5 /* WorkoutManagerTests.swift */; };
+		C03DD64429BEAC3E00527815 /* NewExersiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03DD64329BEAC3E00527815 /* NewExersiceController.swift */; };
 		C0DC230E29BA0A04004B58CA /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DC230D29BA0A04004B58CA /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		2B3A18A429A77FDC00A0F998 /* TrainRollerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRollerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2B41383729AB97F200E912E5 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		2B41383A29AB984100E912E5 /* WorkoutManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManagerTests.swift; sourceTree = "<group>"; };
+		C03DD64329BEAC3E00527815 /* NewExersiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExersiceController.swift; sourceTree = "<group>"; };
 		C0DC230D29BA0A04004B58CA /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				2B3A188329A77FD900A0F998 /* SceneDelegate.swift */,
 				2B3A188529A77FD900A0F998 /* ViewController.swift */,
 				C0DC230D29BA0A04004B58CA /* DetailsViewController.swift */,
+				C03DD64329BEAC3E00527815 /* NewExersiceController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				2B3A188629A77FD900A0F998 /* ViewController.swift in Sources */,
 				2B41383829AB97F200E912E5 /* WorkoutManager.swift in Sources */,
+				C03DD64429BEAC3E00527815 /* NewExersiceController.swift in Sources */,
 				2B3A188229A77FD900A0F998 /* AppDelegate.swift in Sources */,
 				2B3A188429A77FD900A0F998 /* SceneDelegate.swift in Sources */,
 				C0DC230E29BA0A04004B58CA /* DetailsViewController.swift in Sources */,

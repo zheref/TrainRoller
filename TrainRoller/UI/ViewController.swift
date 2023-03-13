@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MainController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var exercisesTableView: UITableView!
@@ -29,9 +29,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-
+    // Creación y presentación de la nueva pantalla (new exersice)
     @IBAction func userDidTapAdd(_ sender: UIBarButtonItem) {
         print("Hola ADD ☺️")
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let newExersiceController = storyboard.instantiateViewController(withIdentifier: "NewExersiceController") as? NewExersiceController
+        newExersiceController?.delegate = self
+        
+        present(newExersiceController!, animated: true)
+    }
+    // conexión de regreso con el nuevo view controller 
+    func deliverNewExersice(newExersice: Workout) {
+        manager.add(workout: newExersice)
+        exercisesTableView.reloadData()
     }
 
     // Metodos del TableViewDataSource
