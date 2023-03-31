@@ -18,12 +18,7 @@ class MainController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func setup() {
-        manager.add(workout: Workout(name: "Biceps Curl", reps: 12, sets: 4, muscle: .biceps, restSeconds: 30))
-        manager.add(workout: Workout(name: "Push Up", reps: 15, sets: 4, muscle: .chest, restSeconds: 30))
-        manager.add(workout: Workout(name: "Squats", reps: 20, sets: 4, muscle: .cuadriceps, restSeconds: 30))
-        manager.add(workout: Workout(name: "Triceps Kickback", reps: 15, sets: 4, muscle: .triceps, restSeconds: 30))
-        manager.add(workout: Workout(name: "Flys", reps: 10, sets: 4, muscle: .shoulders, restSeconds: 30))
-        manager.add(workout: Workout(name: "Remo", reps: 12, sets: 4, muscle: .back, restSeconds: 30))
+        manager.restore()
     }
 
     override func viewDidAppear(_ animated: Bool) {
