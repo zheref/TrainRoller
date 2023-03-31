@@ -44,8 +44,4 @@ class WorkoutManager {
 
 }
 
-// TAREA
-// 1. Crear managers con pruebas unitarias para: Banco (cuenta, cliente)
-//    Incluyendo metodos para: Abrir cuenta, cerrar cuenta, depositar dinero
-// 2. Crear managers con pruebas unitarias para: Reporte de clima (incluyendo ciudades)
-//    Incluyendo metodos para: Actualizar temperatura y variables por ciudad, agregar y eliminar ciudades
+
