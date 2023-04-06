@@ -9,7 +9,7 @@ import UIKit
 
 class NewExersiceController: UIViewController {
     
-    var delegate: NewExerciseDelegate?
+    var handler: ((Workout) -> Void)?
     
     // Intractuar con la información que ingresó el user
     @IBOutlet weak var exersiceNameTextField: UITextField!
@@ -29,7 +29,7 @@ class NewExersiceController: UIViewController {
                                       muscle: .back,
                                       restSeconds: 21)
         
-        delegate?.deliverNewExersice(newExersice: newUserExersice)
+        handler?(newUserExersice)
         dismiss(animated: true)
     }
     

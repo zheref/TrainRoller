@@ -1,9 +1,5 @@
 import UIKit
 
-protocol NewExerciseDelegate: AnyObject {
-    func deliverNewExersice(newExersice: Workout)
-}
-
 class MainController: UIViewController {
 
     @IBOutlet weak var addButton: UIBarButtonItem!
@@ -33,7 +29,11 @@ class MainController: UIViewController {
         print("Hola ADD ☺️")
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let newExersiceController = storyboard.instantiateViewController(withIdentifier: "NewExersiceController") as? NewExersiceController
-        newExersiceController?.delegate = self
+        
+        newExersiceController?.handler = { [weak self] newExersice in
+            self?.manager.add(workout: newExersice)
+            self?.exercisesTableView.reloadData()
+        }
         
         present(newExersiceController!, animated: true)
     }
@@ -64,16 +64,6 @@ extension MainController: UITableViewDelegate {
         detailsController?.model = exersiceSelected
         
         navigationController?.pushViewController(detailsController!, animated: true)
-    }
-    
-}
-
-extension MainController: NewExerciseDelegate {
-    
-    // conexión de regreso con el nuevo view controller
-    func deliverNewExersice(newExersice: Workout) {
-        manager.add(workout: newExersice)
-        exercisesTableView.reloadData()
     }
     
 }
