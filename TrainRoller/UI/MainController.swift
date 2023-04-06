@@ -1,6 +1,10 @@
 import UIKit
 
-class MainController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+protocol NewExerciseDelegate: AnyObject {
+    func deliverNewExersice(newExersice: Workout)
+}
+
+class MainController: UIViewController {
 
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var exercisesTableView: UITableView!
@@ -33,14 +37,11 @@ class MainController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         present(newExersiceController!, animated: true)
     }
-    // conexión de regreso con el nuevo view controller 
-    func deliverNewExersice(newExersice: Workout) {
-        manager.add(workout: newExersice)
-        exercisesTableView.reloadData()
-    }
+    
+}
 
-    // Metodos del TableViewDataSource
-
+extension MainController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manager.workouts.count
     }
@@ -51,7 +52,11 @@ class MainController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = exercise.name
         return cell
     }
-    // Suscripción al evento de selección de celdas.
+    
+}
+
+extension MainController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailsController = UIStoryboard(name: "Main", bundle: Bundle.main)
             .instantiateViewController(withIdentifier: "ExersiceDetails") as? DetailsViewController
@@ -60,4 +65,15 @@ class MainController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         navigationController?.pushViewController(detailsController!, animated: true)
     }
+    
+}
+
+extension MainController: NewExerciseDelegate {
+    
+    // conexión de regreso con el nuevo view controller
+    func deliverNewExersice(newExersice: Workout) {
+        manager.add(workout: newExersice)
+        exercisesTableView.reloadData()
+    }
+    
 }

@@ -9,7 +9,8 @@ import UIKit
 
 class NewExersiceController: UIViewController {
     
-    var delegate: MainController?
+    var delegate: NewExerciseDelegate?
+    
     // Intractuar con la información que ingresó el user
     @IBOutlet weak var exersiceNameTextField: UITextField!
     @IBOutlet weak var exersiceSetsTextField: UITextField!
